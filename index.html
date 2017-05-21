@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>4:20 Scheduler</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #container {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 650px;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 900px;
+        }
+        
+        .wrapper {
+            align-items:flex-start;
+            background-color: #ccc;
+            border-color: #222;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 260px;
+            margin: 10px 10px;
+            width: 450px;
+        }
+        
+        .tile {
+            background-color: #367ABD;
+            border-color: #eee;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: inset 0 0 3px 1px #ccc, 0 0 3px 1px #ccc;
+            display: block;
+            height: 60px;
+            width: 60px;
+        }
+
+        .tile span {
+            display: none;
+            font-size: 1.4em;
+            margin: 0 auto;
+            margin-top: 30%;
+            width: 20%;
+        }
+        
+        .triggered {
+            background-color: #ccc;
+        }
+
+        .triggered.bomb {
+            background-image: url('icons/weed-mine.jpeg');
+            background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+
+        .triggered span {
+            color: red;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="wrapper">
+            <!--9x9-->
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+            <div class="tile"><span ></span></div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
