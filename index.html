@@ -19,7 +19,7 @@
         }
         
         .wrapper {
-            align-items:flex-start;
+            align-items: stretch;
             background-color: #ccc;
             border-color: #222;
             border-style: solid;
@@ -27,33 +27,42 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            height: 260px;
             margin: 10px 10px;
             width: 450px;
         }
-        
+
         .tile {
-            background-color: #367ABD;
+            background-color: #234990;
+        }
+
+        .tile span {
+            display: none;
+        }
+        
+        .day {
             border-color: #eee;
             border-style: solid;
             border-width: 2px;
             box-shadow: inset 0 0 3px 1px #ccc, 0 0 3px 1px #ccc;
             display: block;
             height: 60px;
+            margin: 2px;
             width: 60px;
         }
 
-        .tile span {
-            display: none;
+        .day span {
             font-size: 1.4em;
             margin: 0 auto;
             margin-top: 30%;
-            width: 20%;
+            text-align: center;
         }
         
+        .day.title span {
+            display: block;
+        }
+
         .triggered {
-            background-color: #ccc;
+            background-color: #F5B12E;
         }
 
         .triggered.bomb {
@@ -67,6 +76,10 @@
             color: red;
             display: block;
         }
+
+        .title {
+            background-color: #EC3D33;
+        }
     </style>
 </head>
 
@@ -74,37 +87,44 @@
     <div id="container">
         <div class="wrapper">
             <!--9x9-->
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
-            <div class="tile"><span ></span></div>
+            <div class="day title"><span>Sun</span></div>
+            <div class="day title"><span>Mon</span></div>
+            <div class="day title"><span>Tue</span></div>
+            <div class="day title"><span>Wed</span></div>
+            <div class="day title"><span>Thu</span></div>
+            <div class="day title"><span>Fri</span></div>
+            <div class="day title"><span>Sat</span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
+            <div class="tile day"><span></span></div>
         </div>
     </div>
     <script src="js/app.js"></script>
